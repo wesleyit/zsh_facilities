@@ -26,6 +26,6 @@ Install
 
 To install, open your terminal and type:
 
-`curl https://raw.githubusercontent.com/wesleyit/zsh_facilities/master/installer.sh | bash`
+`curl https://raw.githubusercontent.com/wesleyit/zsh_facilities/master/install.sh | bash`
 
 Then, exit the terminal and open it again. It is done!

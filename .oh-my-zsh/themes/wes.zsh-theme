@@ -97,7 +97,7 @@ prompt_end() {
 # Context: user@hostname (who am I and where am I)
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment 017 246 "%(!.%{%F{yellow}%}.)wesrodlinuxdragon"
+    prompt_segment 017 246 "%(!.%{%F{yellow}%}.)$(whoami)$(hostname -s)"
   fi
 }
 

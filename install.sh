@@ -25,6 +25,7 @@ mkdir "$HOME/.zsh_facilities/.zsh"
 ln -s "$HOME/.zsh_facilities/.zsh" ~/
 ln -s "$HOME/.zsh_facilities/.zshrc" ~/
 ln -s "$HOME/.zsh_facilities/.profile" ~/
+ln -s "$HOME/.zsh_facilities/starship.toml" ~/.config/
 echo "Done"
 
 echo "Defining ZSH as your default shell:"

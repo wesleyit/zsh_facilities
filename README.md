@@ -5,6 +5,8 @@ Welcome to ZSH Facilities
 give you a better management of your zsh config and
 init files.
 
+![alt text](assets/demo.gif)
+
 Now it is easier to locate and change
 your functions, aliases and configs.
 

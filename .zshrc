@@ -1,17 +1,23 @@
-# ZSH Folders and Options
-export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="wes"
-CASE_SENSITIVE="true"
-DISABLE_AUTO_UPDATE="true"
-DISABLE_UPDATE_PROMPT="true"
-plugins=( adb command-not-found docker emoji pip virtualenv )
-SHOW_AWS_PROMPT=false
-source $ZSH/oh-my-zsh.sh
-export LANG=en_US.UTF-8
+#######################################################################
+# ZSH_FACILITIES
+# This project's objective is to make things cleaner, more previsible.
+# Each kind of configuration is placed on its own file, as follows.
+#######################################################################
 
-# ZSH Facilities
-source ~/.zsh_facilities/01_aliases.sh
-source ~/.zsh_facilities/02_functions.sh
-source ~/.zsh_facilities/03_variables.sh
-source ~/.zsh_facilities/04_configs.sh
-source ~/.zsh_facilities/scripts.d/98_fortunes.sh
+## Main zsh configuration
+source ~/.zsh_facilities/config.sh
+
+## Runtimes for programming languages
+source ~/.zsh_facilities/runtimes.sh
+
+## Cuz we like fancy prompts :D
+source ~/.zsh_facilities/prompt.sh
+
+## Shortcuts for navigation
+source ~/.zsh_facilities/shortcuts.sh
+
+## Functions to automate repetitive tasks
+source ~/.zsh_facilities/functions.sh
+
+## Command aliases
+source ~/.zsh_facilities/aliases.sh

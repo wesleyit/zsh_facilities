@@ -17,15 +17,16 @@ If you have any problems, try installing the following dependencies:
 
 `sudo apt-get install curl git`
 
-If your environment was installed by the Ansible Playbook
-in <https://github.com/wesleyit/debian_workstation_devops> then you
-should already have those packages.
-
 Install
 -------
 
 To install, open your terminal and type:
 
-`curl https://raw.githubusercontent.com/wesleyit/zsh_facilities/master/install.sh | bash`
+```bash
+curl 'https://raw.githubusercontent.com/wesleyit/zsh_facilities/master/install.sh' -o '/tmp/zsh_f_install.sh'
+bash /tmp/zsh_f_install.sh
+```
 
-Then, exit the terminal and open it again. It is done!
+Some parts will take a lot of time, as we are compiling binaries in Rust.
+
+When it finish, exit the terminal and open it again. It is done!

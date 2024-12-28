@@ -19,7 +19,7 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # time. Root will always see neofetch.
 FORTUNE_DIR="$HOME/.zsh_facilities/fortunes"
 FORTUNE_COOKIE="$(date +%S)"
-if [[ "$UID" -eq 0 -o "$FORTUNE_COOKIE" -lt "20" ]]
+if [[ "$USER" == "root" || "$FORTUNE_COOKIE" -lt "20" ]]
 then 
     neofetch
 elif [[ "$FORTUNE_COOKIE" -lt "40" ]]
